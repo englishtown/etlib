@@ -1,0 +1,1 @@
+d:\perl\bin\perl "D:\Program Files\NaturalDocs\NaturalDocs" -i ".\lib" -o html "D:\Docs\etlib" -p "D:\Docs\etlibp"
