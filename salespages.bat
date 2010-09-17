@@ -1,1 +1,1 @@
-jsmake.pl -input d:/EF/FrontEnd/lib/ -output salespages.js -packages et.ui.autocomplete et.util.initVideoLinks et.util.initTourSlideshow -compression packer 
+jsmake.pl -input d:/EF/FrontEnd/lib/ -output salespages.js -packages et.ui.autocomplete et.util.initVideoLinks et.util.initTourSlideshow jquery.sidest -compression closure
