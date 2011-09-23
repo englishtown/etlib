@@ -1,1 +1,1 @@
-perl jsmake.pl -input ./lib/ -output community.js -packages et.ui.lightbox
+perl jsmake.pl -config ./community.jsm
