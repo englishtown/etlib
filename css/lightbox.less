@@ -1,0 +1,54 @@
+/*
+ * cssframework://etui/legacy/etlib/lightbox.less
+ * Lightbox css for etlib component
+ * You can find corresponding js file at
+ * https://github/normanzb/etlib/et/ui/
+ */
+
+/* lightbox */
+/* should not specified below width, it will cause lightbox_mask shrink in ie6 */
+.et_js_lightbox { z-index: 65535; zoom: 1; height:800px; width: auto; }
+    * html .et_js_lightbox { height: 100%;}
+    .et_js_lightbox .et_js_lightbox_mask ,
+    .et_js_lightbox .et_js_lightbox_container { position: fixed; width: 100%; height: 100%; left: 0px; top: 0px; z-index: 65535; zoom: 1;}
+    .et_js_lightbox .et_js_lightbox_mask { background-color: #000; height: 100%;}
+    .et_js_lightbox .et_js_lightbox_wrapper {margin: 20px auto; width: 612px; }
+    .et_js_lightbox .et_js_lightbox_wrapper_top { background-image: url('#CacheSvr#/_imgs/online/sp2010/et_ee_popup_lightbox.png'); height: 20px; padding-top: 26px; width: 100%;  text-align: right; }
+        /* png 8 for ie 6 */
+        * html .et_js_lightbox .et_js_lightbox_wrapper_top { background-image: url('#CacheSvr#/_imgs/online/sp2010/et_ee_popup_lightbox_8.png'); height: 20px; padding-top: 26px; width: 100%;  text-align: right; }
+    .et_js_lightbox .et_js_lightbox_wrapper_elastic { background: url('#CacheSvr#/_imgs/online/sp2010/et_ee_popup_lightbox.png') no-repeat 0px 100%;  }
+        * html .et_js_lightbox .et_js_lightbox_wrapper_elastic { background: url('#CacheSvr#/_imgs/online/sp2010/et_ee_popup_lightbox_8.png') no-repeat 0px 100%; }
+    .et_js_lightbox .et_js_lightbox_wrapper_bar { position: relative; margin: 0px auto; top: 0px; width: 540px; height: 20px; text-align: right;}
+    .et_js_lightbox .et_js_lightbox_wrapper_content { position: relative; margin: 0px auto; top: 0px; width: 470px; min-height: 180px; max-height: 430px; overflow: hidden; padding-bottom: 60px; text-align: left;}
+    .et_js_lightbox .et_js_lightbox_wrapper_close { margin-right: 4px; cursor:pointer; line-height: 23px;}
+
+/* larger lightbox (for video player) */
+.et_js_lightbox_video { }
+    .et_js_lightbox_video .et_js_lightbox_wrapper {margin: 20px auto; width: 706px; }
+    .et_js_lightbox_video .et_js_lightbox_wrapper_top { background-image: url('#CacheSvr#/_imgs/online2/common/popup/video_popup_bg.png'); height: 26px; width: 100%; }
+    .et_js_lightbox_video .et_js_lightbox_wrapper_elastic { background: url('#CacheSvr#/_imgs/online2/common/popup/video_popup_bg.png') no-repeat 0px 100%;  width: 100%; }
+        * html .et_js_lightbox_video .et_js_lightbox_wrapper_top { background-image: url('#CacheSvr#/_imgs/online2/common/popup/ie6/video_popup_bg.png'); height: 26px; width: 100%; }
+        * html .et_js_lightbox_video .et_js_lightbox_wrapper_elastic { background: url('#CacheSvr#/_imgs/online2/common/popup/ie6/video_popup_bg.png') no-repeat 0px 100%;  width: 100%; }
+    .et_js_lightbox_video .et_js_lightbox_wrapper_bar { width: 562px; }
+    .et_js_lightbox_video .et_js_lightbox_wrapper_content { width: 522px;  max-height: 630px; }
+
+/* largest lightbox (for slide show) */
+.et_js_lightbox_largest {}
+    .et_js_lightbox_largest .et_js_lightbox_wrapper {margin: auto auto; width: 850px; }
+    .et_js_lightbox_largest .et_js_lightbox_wrapper_top { background-image: url('#CacheSvr#/_imgs/online/sp2010/et_tour_popup_bg.png'); height: 26px; width: 100%; }
+    .et_js_lightbox_largest .et_js_lightbox_wrapper_elastic { background: url('#CacheSvr#/_imgs/online/sp2010/et_tour_popup_bg.png') no-repeat 0px 100%;  width: 100%; }
+        * html .et_js_lightbox_largest .et_js_lightbox_wrapper_top { background-image: url('#CacheSvr#/_imgs/online/sp2010/et_tour_popup_bg_8.png'); height: 26px; width: 100%; }
+        * html .et_js_lightbox_largest .et_js_lightbox_wrapper_elastic { background: url('#CacheSvr#/_imgs/online/sp2010/et_tour_popup_bg_8.png') no-repeat 0px 100%;  width: 100%; }
+    .et_js_lightbox_largest .et_js_lightbox_wrapper_bar { width: 748px; }
+    .et_js_lightbox_largest .et_js_lightbox_wrapper_content { width: 722px;  max-height: 630px; }
+/* 2nd tier video lightbox content */
+.et_secondtier_lightbox_content { display: none; }
+    .et_secondtier_lightbox_content .et_secondtier_lightbox_player { width: 520px; height: 315px; }
+    /* on ipad, the video iframe height will be expanded to 341 when its actually height is set 315px */
+    .ios .et_secondtier_lightbox_content .et_secondtier_lightbox_player { width: 520px; height: 341px; }
+
+
+.et_js_lightbox .et-button { font-size: 12px; }
+.et_js_lightbox .et_sprite{ background: url(#CacheSvr#/_imgs/online/sp2010/etsprite32.png) no-repeat; display: inline-block;}
+    html.msie6 .et_js_lightbox .et_sprite { background-image:url(#CacheSvr#/_imgs/online/sp2010/etsprite8.png); }
+.et_js_lightbox .et_sprite_close { background-position: -12px -72px ; width: 23px; height: 23px; vertical-align: middle;}
